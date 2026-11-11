@@ -4,7 +4,7 @@ Friday is a personal AI assistant. FridayOS runs it for you: each account gets i
 
 Sign up at [systems.cyberneel.com](https://systems.cyberneel.com).
 
-![Your FridayOS account page](docs/account.webp)
+![Your FridayOS account page](docs/account.png)
 
 ## This repository
 
