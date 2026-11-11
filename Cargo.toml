@@ -1,0 +1,10 @@
+[package]
+name = "fridayos"
+version = "0.1.0"
+edition = "2021"
+description = "Opens your FridayOS account from this computer, after Sign in with publik"
+repository = "https://github.com/cyberneel/fridayos"
+
+[dependencies]
+serde_json = "1"
+uuid = { version = "1", features = ["v4"] }

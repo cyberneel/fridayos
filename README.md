@@ -4,11 +4,14 @@ Friday is a personal AI assistant. FridayOS runs it for you: each account gets i
 
 Sign up at [systems.cyberneel.com](https://systems.cyberneel.com).
 
+![Your FridayOS account page](docs/account.webp)
+
 ## This repository
 
-Friday's source is private for now. This repository holds the part of Friday that talks to [publik](https://publikhq.com), so its listing can be checked against the code that runs:
+Friday's source is private for now. This repository holds the part of Friday that talks to [publik](https://publikhq.com), and a small launcher:
 
 - `src/publik.rs` is the module Friday runs. It gets your server its own publik key (`POST /api/v1/installs`), waits for you to sign in (`GET /api/v1/wallet`), and counts usage (`POST /api/v1/telemetry`).
+- `src/main.rs` is the launcher. `cargo run --release` signs you in with publik, then opens a page on this computer (http://127.0.0.1:7340) that links to your account. Friday itself runs on your server, not here.
 - `publik-app-token.txt` is Friday's publik app token. It is public by design: it can only create capped keys for this app.
 
 ## Sign in with publik
